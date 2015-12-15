@@ -59,7 +59,7 @@ RSpec.describe Rider, type: :model do
     
     #pool ride gets second rider
     rider2 = create :rider
-    ride2 = rider.book(1, true)
+    ride2 = rider2.book(1, true)
     
     expect(ride2).to eq ride
     expect(ride2.riders.count).to eq 2
@@ -70,7 +70,7 @@ RSpec.describe Rider, type: :model do
     
     #same pool ride gets third rider + friend = car now full
     rider3 = create :rider
-    ride3 = rider.book(2, true)
+    ride3 = rider3.book(2, true)
     
     expect(ride3).to eq ride
     expect(ride3.riders.count).to eq 3
