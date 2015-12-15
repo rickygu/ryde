@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Driver, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "has one car" do
+    driver = create :driver
+    expect(driver.car).to eq nil
+    car = create :car, driver: driver
+    expect(driver.car).to eq car
+  end
 end

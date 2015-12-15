@@ -2,12 +2,11 @@
 
 Code Challenge Dec 14 2015
 
-* Task
-
 Design a data model for Ryde (an Uber competitor) fulfilling the following business needs:
 
-Enable Ryde to track drivers and cars and car types
-Enable Ryde to track when drivers are available for picking up passengers
-Enable riders to book a ride
-Enable multiple riders to book a shared ride for car types that allow +1 capacity
+* Enable Ryde to track drivers and cars and car types
+* Enable Ryde to track when drivers are available for picking up passengers
+* Enable riders to book a ride
+* Enable multiple riders to book a shared ride for car types that allow +1 capacity
+
 
