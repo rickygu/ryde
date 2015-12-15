@@ -29,7 +29,7 @@ RSpec.describe Rider, type: :model do
     expect(distance).to be > 0
   end
   
-  it 'can book closet car for a ride' do
+  it 'can book closet car available for a ride' do
     rider = create :rider
     ride = rider.book    
     expect(ride).to be_falsey
@@ -43,7 +43,7 @@ RSpec.describe Rider, type: :model do
     expect(ride.car.available).to eq false
   end
   
-  it "can book closest car for car pool" do
+  it "can book a shared pool ride for pool rides" do
     
     # pool ride gets first rider
     rider = create :rider
