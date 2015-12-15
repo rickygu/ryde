@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151215044824) do
+ActiveRecord::Schema.define(version: 20151215060909) do
 
   create_table "cars", force: :cascade do |t|
     t.integer  "driver_id"
@@ -46,12 +46,15 @@ ActiveRecord::Schema.define(version: 20151215044824) do
   end
 
   create_table "rides", force: :cascade do |t|
-    t.integer  "status",     default: 0
-    t.boolean  "pool",       default: false
+    t.integer  "status",            default: 0
+    t.boolean  "pool",              default: false
     t.integer  "passengers"
     t.integer  "driver_id"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
+    t.boolean  "available_to_pool", default: false
+    t.float    "lat"
+    t.float    "lng"
   end
 
 end
