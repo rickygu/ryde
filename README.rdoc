@@ -10,3 +10,12 @@ Design a data model for Ryde (an Uber competitor) fulfilling the following busin
 * Enable multiple riders to book a shared ride for car types that allow +1 capacity
 
 
+To run:
+
+    bundle install
+    rake db:migrate RAILS_ENV=test
+    guard
+    
+Time spent: 2.5 hours
+
+
